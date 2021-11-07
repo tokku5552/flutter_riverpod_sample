@@ -5,7 +5,8 @@ part 'count.freezed.dart';
 
 @freezed
 class Count with _$Count {
-  const factory Count({
+  @Assert('value >= 0')
+  const factory Count([
     @Default(0) int value,
-  }) = _Count;
+  ]) = _Count;
 }

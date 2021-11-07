@@ -17,9 +17,9 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$CountTearOff {
   const _$CountTearOff();
 
-  _Count call({int value = 0}) {
+  _Count call([int value = 0]) {
     return _Count(
-      value: value,
+      value,
     );
   }
 }
@@ -85,7 +85,7 @@ class __$CountCopyWithImpl<$Res> extends _$CountCopyWithImpl<$Res>
     Object? value = freezed,
   }) {
     return _then(_Count(
-      value: value == freezed
+      value == freezed
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as int,
@@ -96,7 +96,7 @@ class __$CountCopyWithImpl<$Res> extends _$CountCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_Count with DiagnosticableTreeMixin implements _Count {
-  const _$_Count({this.value = 0});
+  const _$_Count([this.value = 0]) : assert(value >= 0);
 
   @JsonKey(defaultValue: 0)
   @override
@@ -133,7 +133,7 @@ class _$_Count with DiagnosticableTreeMixin implements _Count {
 }
 
 abstract class _Count implements Count {
-  const factory _Count({int value}) = _$_Count;
+  const factory _Count([int value]) = _$_Count;
 
   @override
   int get value;
