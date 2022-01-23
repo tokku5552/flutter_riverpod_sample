@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod_sample/counter_notifier.dart';
+import 'package:flutter_riverpod_sample/presentation/counter_notifier.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class MyHomePage extends HookConsumerWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+class CounterPage extends HookConsumerWidget {
+  const CounterPage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override

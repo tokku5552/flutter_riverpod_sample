@@ -1,4 +1,4 @@
-import 'package:flutter_riverpod_sample/count.dart';
+import 'package:flutter_riverpod_sample/domain/count.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final counterProvider = StateNotifierProvider<CounterNotifier, Count>(
